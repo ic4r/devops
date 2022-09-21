@@ -1,3 +1,5 @@
+# 첫번째서비스: 서비스메시로 들어오는 트래픽이 게이트웨이를 타고 들어온다.
+# 80 포트로 들어오는 모든 호스트의 트래픽이 이 서비스로 들어온다. 
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
