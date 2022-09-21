@@ -1,7 +1,7 @@
 ############ eks cluster iam role ############
 
 resource "aws_iam_role" "test-iam-role-eks-cluster" {
-  name = "skt-user15-iam-role-eks-cluster"
+  name = "${var.user-name}-iam-role-eks-cluster"
 
   assume_role_policy = <<POLICY
 {

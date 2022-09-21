@@ -17,5 +17,12 @@ resource "aws_eks_cluster" "test-eks-cluster" {
     endpoint_public_access = true
   }
 
+  tags = {
+    "alpha.eksctl.io/cluster-oidc-enabled" = "true"
+  }
+
+  tags_all = {
+    "alpha.eksctl.io/cluster-oidc-enabled" = "true"
+  }
 
 }

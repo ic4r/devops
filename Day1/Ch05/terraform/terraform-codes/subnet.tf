@@ -14,14 +14,14 @@ resource "aws_subnet" "test-public-subnet1" {
   private_dns_hostname_type_on_launch            = "ip-name"
 
   tags = {
-    Name                                     = "skt-user15-public-subnet1"
-    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+    Name                                     = "${var.user-name}-public-subnet1"
+    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
   tags_all = {
-    Name                                     = "skt-user15-public-subnet1"
-    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+    Name                                     = "${var.user-name}-public-subnet1"
+    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
@@ -45,14 +45,14 @@ resource "aws_subnet" "test-public-subnet3" {
   private_dns_hostname_type_on_launch            = "ip-name"
 
   tags = {
-    Name                                     = "skt-user15-public-subnet3"
-    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+    Name                                     = "${var.user-name}-public-subnet3"
+    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 
   tags_all = {
-    Name                                     = "skt-user15-public-subnet3"
-    "kubernetes.io/cluster/test-eks-cluster" = "shared"
+    Name                                     = "${var.user-name}-public-subnet3"
+    "kubernetes.io/cluster/${var.cluster-name}" = "shared"
     "kubernetes.io/role/elb"                 = 1
   }
 

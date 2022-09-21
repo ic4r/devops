@@ -6,3 +6,8 @@ variable "cluster-name" {
   default = "skt-user15-eks-cluster"
   type    = string
 }
+
+variable "user-name" {
+  default = "skt-user15"
+  type    = string
+}

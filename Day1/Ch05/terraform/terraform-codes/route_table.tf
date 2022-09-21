@@ -12,11 +12,11 @@ resource "aws_route_table" "test-route-table-pub-sub1" {
   }
 
   tags = {
-    Name = "skt-user15-route-table-pub-sub1"
+    Name = "${var.user-name}-route-table-pub-sub1"
   }
 
   tags_all = {
-    Name = "skt-user15-route-table-pub-sub1"
+    Name = "${var.user-name}-route-table-pub-sub1"
   }
 
   vpc_id = aws_vpc.test-vpc.id
@@ -35,11 +35,11 @@ resource "aws_route_table" "test-route-table-pub-sub3" {
   }
 
   tags = {
-    Name = "skt-user15-route-table-pub-sub3"
+    Name = "${var.user-name}-route-table-pub-sub3"
   }
 
   tags_all = {
-    Name = "skt-user15-route-table-pub-sub3"
+    Name = "${var.user-name}-route-table-pub-sub3"
   }
 
   vpc_id = aws_vpc.test-vpc.id

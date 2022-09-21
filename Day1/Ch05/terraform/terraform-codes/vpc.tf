@@ -6,10 +6,10 @@ resource "aws_vpc" "test-vpc" {
   instance_tenancy                 = "default"
 
   tags = {
-    Name = "skt-user15-vpc"
+    Name = "${var.user-name}-vpc"
   }
 
   tags_all = {
-    Name = "skt-user15-vpc"
+    Name = "${var.user-name}-vpc"
   }
 }
