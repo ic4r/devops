@@ -2,10 +2,10 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ main ]
 
 env:
-  ecr-repo: test
+  ecr-repo: skt-user15  # repo-name
   image-tag: orange
 
 jobs:
