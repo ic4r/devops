@@ -5,10 +5,10 @@
 replicaCount: 2
 
 image:
-  repository: <AWS ECR Repository URL>/test
+  repository: 255380800200.dkr.ecr.ap-southeast-1.amazonaws.com/skt-user15
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: orange
+  tag: green
 
 
 container:
@@ -50,8 +50,7 @@ ingress:
   annotations: 
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/target-type: ip
-      alb.ingress.kubernetes.io/subnets: <Subnet IDs>
-  hosts:
+      alb.ingress.kubernetes.io/subnets: subnet-0c8b939e19b8ad31d, subnet-03cf6177b14ef2baa
     - host: ""
       paths:
         - path: /
