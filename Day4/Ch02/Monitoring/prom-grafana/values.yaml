@@ -170,7 +170,7 @@ alertmanager:
   ##
   config:
     global:
-      slack_api_url: '<Slack Webhook URL>'
+      slack_api_url: 'https://hooks.slack.com/services/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'
 
     route:
       receiver: 'default-receiver'
@@ -761,7 +761,7 @@ grafana:
     annotations:
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/target-type: ip
-      alb.ingress.kubernetes.io/subnets: <Subnet IDs>
+      alb.ingress.kubernetes.io/subnets: subnet-0c8b939e19b8ad31d,subnet-03cf6177b14ef2baa
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
 
